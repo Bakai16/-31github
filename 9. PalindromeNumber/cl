@@ -1,0 +1,20 @@
+class Solution{
+  fun isPallindrome(x: Int){
+    //Straighforward -> Check if is equal after toString().reverse()
+    if(x < 0) return false
+    if(x < 10) return true
+    val digitslist = mutableListOf<Int>()
+    var number = x
+    while(number > 0){
+      digitSlist.add(number % 10)
+      number /= 10
+    }
+    var left = 0
+    var right = digitsList.size -1
+    while(left < right){
+      if(digitsList[Left] != digitsList[right]) return false
+      left++
+      right--
+    }
+  }
+}
